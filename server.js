@@ -10,10 +10,8 @@ const fileUpload = require("express-fileupload");
 const db = knex({
   client: "pg",
   connection: {
-    host: "postgresql-contoured-57699",
-    user: "postgres",
-    password: "root",
-    database: "opaque-soul",
+    host: process.env.DATABASE_URL,
+    ssl: true,
   },
 });
 
