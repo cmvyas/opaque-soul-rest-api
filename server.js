@@ -131,6 +131,6 @@ app.get("/opaque-soul/readers/:currentid", (req, res) => {
 /article fetch -->put
 */
 
-app.listen(process.env.PORT || 4001, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("app run ho rha hai");
 });
